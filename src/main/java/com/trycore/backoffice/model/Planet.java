@@ -18,7 +18,7 @@ public class Planet {
 
     @Id
     @Column(name = "id")
-    private int idPlanet;
+    private Long idPlanet;
 
     @Column(name = "name")
     private String namePlanet;
@@ -38,7 +38,7 @@ public class Planet {
     @Column(name = "counter")
     private int counterPlanet;
 
-    public Planet(int idPlanet,
+    public Planet(Long idPlanet,
                   String namePlanet,
                   int rotationPeriodPlanet,
                   int diameterPlanet,
