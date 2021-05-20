@@ -11,14 +11,6 @@ import java.util.List;
 @Repository
 public interface PlanetRepository extends JpaRepository<Planet, Long> {
 
-    /*
-    String queryGetPostByIdSubreddit = "SELECT * FROM Post WHERE  idSubreddit = :idSubreddit ";
-    @Query(value = queryGetPostByIdSubreddit, nativeQuery = true)
-    List<Post> getPostByIdSubreddit(
-            @Param("idSubreddit") Long idSubreddit
-    );
-     */
-
     String queryGetAllPlanets = "SELECT * FROM Planet ;";
     @Query(value = queryGetAllPlanets, nativeQuery = true)
     List<Planet> getAllPlanets();
