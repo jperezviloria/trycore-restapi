@@ -19,7 +19,7 @@ public class Person {
 
     @Id
     @Column(name = "id")
-    private int idPerson;
+    private Long idPerson;
 
     @Column(name = "name")
     private String namePerson;
@@ -45,7 +45,7 @@ public class Person {
     @Column(name = "counter")
     private int counterPerson;
 
-    public Person(int idPerson,
+    public Person(Long idPerson,
                   String namePerson,
                   int agePerson,
                   int heightPerson,

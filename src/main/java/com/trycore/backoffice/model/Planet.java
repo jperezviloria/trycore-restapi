@@ -18,7 +18,7 @@ public class Planet {
 
     @Id
     @Column(name = "id")
-    private int idPlanet;
+    private Long idPlanet;
 
     @Column(name = "name")
     private String namePlanet;
@@ -30,20 +30,20 @@ public class Planet {
     private int diameterPlanet;
 
     @Column(name = "weather")
-    private int weatherPlanet;
+    private String weatherPlanet;
 
     @Column(name = "land")
-    private int landPlanet;
+    private String landPlanet;
 
     @Column(name = "counter")
     private int counterPlanet;
 
-    public Planet(int idPlanet,
+    public Planet(Long idPlanet,
                   String namePlanet,
                   int rotationPeriodPlanet,
                   int diameterPlanet,
-                  int weatherPlanet,
-                  int landPlanet,
+                  String weatherPlanet,
+                  String landPlanet,
                   int counterPlanet) {
         this.idPlanet = idPlanet;
         this.namePlanet = namePlanet;

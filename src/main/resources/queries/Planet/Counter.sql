@@ -1,0 +1,1 @@
+UPDATE Planet SET COUNTER = COUNTER + 1 WHERE ID = :id
