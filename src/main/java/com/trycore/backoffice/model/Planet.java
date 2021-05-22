@@ -30,7 +30,7 @@ public class Planet {
     private int diameterPlanet;
 
     @Column(name = "weather")
-    private int weatherPlanet;
+    private String weatherPlanet;
 
     @Column(name = "land")
     private String landPlanet;
@@ -42,7 +42,7 @@ public class Planet {
                   String namePlanet,
                   int rotationPeriodPlanet,
                   int diameterPlanet,
-                  int weatherPlanet,
+                  String weatherPlanet,
                   String landPlanet,
                   int counterPlanet) {
         this.idPlanet = idPlanet;
